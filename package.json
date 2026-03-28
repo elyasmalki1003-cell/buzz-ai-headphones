@@ -1,0 +1,34 @@
+{
+  "name": "buzz-ai-headphones",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E-commerce store for AI noise-cancelling headphones",
+  "scripts": {
+    "dev": "pnpm --parallel dev",
+    "build": "pnpm --parallel build",
+    "test": "pnpm --parallel test",
+    "lint": "pnpm --parallel lint",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "db:push": "pnpm --filter backend db:push",
+    "db:seed": "pnpm --filter backend db:seed",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "dev:backend": "pnpm --filter backend dev",
+    "deploy:frontend": "pnpm --filter frontend deploy",
+    "deploy:backend": "pnpm --filter backend deploy"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@10.4.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
