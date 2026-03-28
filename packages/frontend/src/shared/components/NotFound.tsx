@@ -16,13 +16,13 @@ const NotFound = () => {
           Let's get you back to amazing sound.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button asChild>
+          <Button>
             <Link to="/">
               <Home className="mr-2 h-4 w-4" />
               Back to Home
             </Link>
           </Button>
-          <Button variant="outline" asChild>
+          <Button variant="outline">
             <Link to="/#products">
               Browse Products
             </Link>

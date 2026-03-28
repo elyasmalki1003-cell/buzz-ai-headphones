@@ -6,7 +6,7 @@ import './styles/globals.css'
 
 // Load Stripe asynchronously
 const stripePromise = import('@stripe/stripe-js').then(({ loadStripe }) =>
-  loadStripe(import.meta.env.VITE_STRIPE_PUBLIC_KEY || '')
+  loadStripe(process.env.VITE_STRIPE_PUBLIC_KEY || '')
 )
 
 // Export stripe promise for use in components

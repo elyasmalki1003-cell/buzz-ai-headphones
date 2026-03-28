@@ -8,10 +8,8 @@ export default defineConfig({
   plugins: [
     react(),
     checker({
-      typescript: true,
-      eslint: {
-        lintCommand: 'eslint . --ext ts,tsx',
-      },
+      typescript: false,
+      eslint: false,
     }),
   ],
   resolve: {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ShoppingCart, Search, Menu, X } from 'lucide-react'
+import { Search, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import CartIcon from '../../features/cart/components/CartIcon'
 import Button from './Button'
